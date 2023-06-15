@@ -12,7 +12,7 @@ const projects = [
     description:
       "FitIn is a fitness focused social media app where you can share your workout progress with friends, track workout routines or post progress pics. ",
     image: "/FitInLogin.png",
-    github: "",
+    github: "https://github.com/JawwadK/cps714-fitin",
     link: "https://fitin.web.app/",
   },
   {
