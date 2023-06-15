@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full mx-auto px-4 bg-slate-50 shadow fixed top-0 z-50 sm:px-20 dark:bg-zinc-900 dark:border-zinc-600 text-cyan-950">
+      <header className="w-full mx-auto px-4 bg-slate-50 shadow fixed top-0 z-50 sm:px-20 dark:bg-zinc-900 dark:border-zinc-600 text-cyan-950 dark:text-white">
         <div className="justify-between md:items-center md:flex ">
           <div>
             <div className="flex items-center justify-between py-3">
@@ -83,14 +83,14 @@ const Navbar = () => {
                   <button onClick={() => setTheme("light")} className="p-2">
                     <FaSun
                       size={25}
-                      className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-100 cursor-pointer"
+                      className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-100 cursor-pointer dark:text-white"
                     />
                   </button>
                 ) : (
                   <button onClick={() => setTheme("dark")} className="p-2">
                     <FaMoon
                       size={25}
-                      className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-100 cursor-pointer"
+                      className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-100 cursor-pointer dark:text-white"
                     />
                   </button>
                 )}
