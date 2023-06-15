@@ -49,7 +49,7 @@ const About = () => {
               <br />
               <p>
                 Outside of my career I have a few hobbies that I am passionate
-                in, I am an avid reader, I love fishing and I enjoy video games.
+                in. I am an avid reader, I love fishing and I enjoy playing video games.
                 I also play and coach a community tennis league.
               </p>
               <br />
