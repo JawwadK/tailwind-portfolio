@@ -38,25 +38,24 @@ const About = () => {
 
                 <p>
                   Hello, my name is Jawwad. I am a Software Engineer from
-                  Toronto ON. I am dedicated and hardworking and focused.
+                  Toronto ON. I am analyticall, independent and hardworking.
                 </p>
                 <br />
                 <p>
                   I graduated from Toronto Metropolitan University in 2023 with
-                  a BSc in Computer Science. I've worked at various internships
-                  during my time as a student both in the public and private
-                  sector and have the skills to.
+                  a BSc in Computer Science. I started my career in IT as a
+                  student in 2020 as have been working in the field ever since.
                 </p>
                 <br />
                 <p>
-                  I have quite a few hobbies, I am an avid reader, I enjoy video
-                  games, I play a variety of sports recreationally.
+                  I tend to stick to a few hobbies, I am an avid reader and I
+                  enjoy video games. I also play and coach a community tennis
+                  league.
                 </p>
                 <br />
                 <p>
-                  I'm a advocate for lifelong-learning and strive to learn and
-                  grow everyday. I&apos;m currently learning as much as I can
-                  about Cloud Computing.
+                  I&apos;m an advocate for lifelong-learning and strive to learn
+                  and grow everyday. I&apos;ve recently gotten my first cloud certification and am eager to see where this path leads me.
                 </p>
               </div>
               <div className="md:w-1/2">

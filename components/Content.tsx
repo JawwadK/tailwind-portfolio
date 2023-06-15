@@ -56,10 +56,11 @@ const Content = () => {
 
           <div className="md:mt-2 md:w-3/5">
             <h1 className="font-bold text-4xl mt-6 md:text-7xl md:mt-0">
-              Hello, I'm Jawwad!
+              Hello, I&apos;m Jawwad!
             </h1>
             <p className="text-lg mt-4 mb-6 md:text-2xl">
-              I'm a Software Engineer based in Toronto. Dedicated to simplifying work with innovative solutions.
+              I&apos;m a Software Engineer based in Toronto. Dedicated to
+              simplifying work with innovative solutions.
             </p>
           </div>
         </div>
