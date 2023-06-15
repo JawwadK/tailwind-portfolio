@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Bagel Fat One
+- Font Author: Copyright 2022 The Bagel Fat Project Authors (https://github.com/JAMO-TYPEFACE/BagelFat)
+- Font Source: http://fonts.gstatic.com/s/bagelfatone/v1/hYkPPucsQOr5dy02WmQr5Zkd0B5mvv0dSbM.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
