@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import { MdEmail } from "react-icons/md"
 
 const Content = () => {
@@ -66,10 +66,11 @@ const Content = () => {
 
         <div className="flex flex-row text-center items-center justify-center mb-12 py-16">
           <button
-            className="text-3xl text-neutral-100 font-semibold px-6 py-3 bg-cyan-950 rounded shadow hover:bg-cyan-600 dark:bg-white dark: dark:text-neutral-950 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-100"
+            className="flex items-center justify-center text-3xl text-neutral-100 font-semibold px-6 py-3 bg-cyan-950 rounded shadow hover:bg-cyan-600 dark:bg-white dark: dark:text-neutral-950 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-100"
             onClick={() => handleButtonClick("/Jawwad_Resume.pdf")}
           >
-            Resume
+            <FaFilePdf size={45} className="mr-2" />
+            <span>Resumé</span>
           </button>
         </div>
       </section>
