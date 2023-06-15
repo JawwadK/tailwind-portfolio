@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md"
 
 const Content = () => {
-  const handleButtonClick = (link) => {
+  const handleButtonClick = (link: string) => {
     window.open(link, "_blank");
   };
   return (
