@@ -58,7 +58,7 @@ const Content = () => {
               Hello, I&apos;m Jawwad!
             </h1>
             <p className="text-lg mt-4 mb-6 md:text-2xl">
-              I&apos;m a Software Engineer based in Toronto. Dedicated to
+              I&apos;m a Software Engineer based in Toronto, ON. Dedicated to
               simplifying work with innovative solutions.
             </p>
           </div>
