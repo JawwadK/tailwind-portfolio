@@ -41,6 +41,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
+                // @ts-ignore
               >
                 <div className="md:py-5 md:block">
                   <h2 className="text-4xl font-bold ">Jawwad Khan</h2>
@@ -74,6 +75,7 @@ const Navbar = () => {
                       offset={-100}
                       duration={500}
                       onClick={() => setNavbar(!navbar)}
+                      // @ts-ignore
                     >
                       {item.label}
                     </Link>
