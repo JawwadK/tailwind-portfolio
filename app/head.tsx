@@ -18,7 +18,10 @@ export default function Head() {
         property="og:description"
         content="Jawwad Khan - Full-stack Software Developer Portfolio showcasing my projects and skills."
       />
-      <meta property="og:image" content="https://jawwadkhan.ca/your-image.jpg" />
+      <meta
+        property="og:image"
+        content="https://jawwadkhan.ca/your-image.jpg"
+      />
       <meta property="og:url" content="https://example.com/portfolio" />
       <meta property="og:type" content="website" />
 
@@ -39,6 +42,7 @@ export default function Head() {
       <link rel="canonical" href="https://example.com/portfolio" />
       {/* Favicon */}
       <link rel="shortcut icon" href="/favicon/favicon.ico" sizes="any" />
+
     </>
   );
 }
