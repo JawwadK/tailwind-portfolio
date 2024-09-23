@@ -27,7 +27,7 @@ const Technologies: React.FC = () => {
         {technologies.map((tech, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center p-4 transition-transform duration-300 transform hover:scale-110"
+            className="group flex flex-col items-center p-4 transition-transform duration-300 transform hover:scale-150"
           >
             <i className={`${tech.icon} text-6xl`}></i>
             <span className="mt-2 text-lg font-semibold">{tech.name}</span>

@@ -69,7 +69,7 @@ const Projects = () => {
           return (
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col animate-slideUpCubicBezier animation-delay-2">
+                <div className="flex flex-col animate-slideUpCubicBezier animation-delay-2 hover:scale-110">
                   <div className="mb-4">
                     <Link href={project.link} target="_blank">
                       <Image
@@ -77,7 +77,7 @@ const Projects = () => {
                         alt={project.name}
                         width={1000}
                         height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70"
+                        className="rounded-xl shadow-xl hover:opacity-70 "
                       />
                     </Link>
                   </div>
@@ -89,13 +89,13 @@ const Projects = () => {
                     <div className="flex space-x-4">
                       <Link href={project.github} target="_blank">
                         <FaGithub
-                          className="text-cyan-950 hover:text-cyan-500 dark:text-white transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-100 cursor-pointer"
+                          className="text-cyan-950 hover:text-cyan-500 dark:text-white transition ease-in-out hover:-translate-y-1 hover:scale-150 duration-100 cursor-pointer"
                           size={30}
                         />
                       </Link>
                       <Link href={project.link} target="_blank">
                         <BsBoxArrowUpRight
-                          className="text-cyan-950 hover:text-cyan-500 dark:text-white transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-100 cursor-pointer"
+                          className="text-cyan-950 hover:text-cyan-500 dark:text-white transition ease-in-out hover:-translate-y-1 hover:scale-150 duration-100 cursor-pointer"
                           size={30}
                         />
                       </Link>

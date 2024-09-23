@@ -18,16 +18,17 @@ const Content = () => {
         className="h-screen flex flex-col justify-center items-center"
       >
         {/* Headshot Section */}
-        <div className="w-full h-auto flex justify-center items-center mt-64 sm:mt-64">
-          <Image
-            className="rounded-full shadow-3xl"
-            src="/Headshot Cropped.jpg"
-            alt="Jawwad Headshot Image"
-            width={300}
-            height={300}
-          />
-        </div>
-
+        <SlideInAnimation direction="left">
+          <div className="w-full h-auto flex justify-center items-center mt-64 sm:mt-64">
+            <Image
+              className="rounded-full shadow-3xl"
+              src="/Headshot Cropped.jpg"
+              alt="Jawwad Headshot Image"
+              width={300}
+              height={300}
+            />
+          </div>
+        </SlideInAnimation>
         {/* Text Section */}
         <div className="flex flex-col text-center items-center justify-center mt-12 pt-16 pb-32 sm:py-32 md:text-left md:w-5/5">
           <TypingAnimation />
