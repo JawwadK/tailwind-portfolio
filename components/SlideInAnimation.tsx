@@ -1,9 +1,9 @@
-// components/SlideInAnimation.tsx
 import { motion } from "framer-motion";
 
 interface SlideInAnimationProps {
-  direction?: "left" | "right";
+  direction?: "left" | "right" | "top" | "bottom";
   children: React.ReactNode;
+  className?: string; // Add className prop
 }
 
 const slideInVariants = (direction: "left" | "right" | "top" | "bottom") => ({
@@ -25,12 +25,13 @@ const slideInVariants = (direction: "left" | "right" | "top" | "bottom") => ({
 const SlideInAnimation: React.FC<SlideInAnimationProps> = ({
   direction = "left",
   children,
+  className = "", // Default to an empty string
 }) => (
   <motion.div
     initial="hidden"
     animate="visible"
     variants={slideInVariants(direction)}
-    className="rounded-lg text-center"
+    className={`rounded-lg text-center ${className}`} // Use className prop
   >
     {children}
   </motion.div>
