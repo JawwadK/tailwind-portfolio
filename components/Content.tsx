@@ -4,7 +4,7 @@ import Image from "next/image";
 import TypingAnimation from "@/components/TypingAnimation";
 import SlideInAnimation from "./SlideInAnimation";
 import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
-import { MdEmail } from "react-icons/md"
+import { MdEmail } from "react-icons/md";
 
 const Content = () => {
   const handleButtonClick = (link: string) => {
@@ -53,7 +53,7 @@ const Content = () => {
               <button
                 className="px-6 py-3 rounded transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-100"
                 onClick={() =>
-                  handleButtonClick("https://www.linkedin.com/in/jawwadkhan77/")
+                  handleButtonClick("https://www.linkedin.com/in/jawwad77/")
                 }
               >
                 <FaLinkedin
