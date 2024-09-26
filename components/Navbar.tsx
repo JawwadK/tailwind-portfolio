@@ -44,7 +44,7 @@ const Navbar = () => {
                 // @ts-ignore
               >
                 <div className="md:py-5 md:block">
-                  <h2 className="text-4xl font-bold ">Jawwad Khan</h2>
+                  <h2 className="text-4xl font-bold hover:scale-110 duration-150">Jawwad Khan</h2>
                 </div>
               </Link>
               <div className="md:hidden">

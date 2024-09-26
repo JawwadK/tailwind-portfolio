@@ -28,7 +28,7 @@ const Content = () => {
             </p>
 
             <p className="text-lg mt-4 mb-6 md:text-2xl text-center md:text-left">
-              Let's talk about Data, AI, and Cloud Architecture
+              Let&apos;s talk about Data, AI, and Cloud Architecture
             </p>
           </SlideInAnimation>
           <SlideInAnimation direction="left">
