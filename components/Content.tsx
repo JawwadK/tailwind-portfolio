@@ -18,17 +18,6 @@ const Content = () => {
         className="min-h-screen flex flex-col justify-center items-center overflow-auto"
       >
         {/* Headshot Section */}
-        <SlideInAnimation direction="left">
-          <div className="w-full h-auto flex justify-center items-center sm:mt-64">
-            <Image
-              className="rounded-full shadow-3xl"
-              src="/Headshot Cropped.jpg"
-              alt="Jawwad Headshot Image"
-              width={300}
-              height={300}
-            />
-          </div>
-        </SlideInAnimation>
         {/* Text Section */}
         <div className="flex flex-col text-center items-center justify-center mt-12 md:pb-16 sm:py-32 md:text-left md:w-5/5">
           <TypingAnimation />
@@ -42,7 +31,17 @@ const Content = () => {
               Let's talk about Data, AI, and Cloud Architecture
             </p>
           </SlideInAnimation>
-
+          <SlideInAnimation direction="left">
+            <div className="w-full h-auto flex justify-center items-center">
+              <Image
+                className="rounded-full shadow-3xl transition-all duration-300 grayscale hover:grayscale-0"
+                src="/Headshot Cropped.jpg"
+                alt="Jawwad Headshot Image"
+                width={200}
+                height={200}
+              />
+            </div>
+          </SlideInAnimation>
           {/* Social Buttons Section */}
           <SlideInAnimation direction="right">
             <div className="pt-6 md:px-4 flex space-x-6 justify-center md:justify-start">
