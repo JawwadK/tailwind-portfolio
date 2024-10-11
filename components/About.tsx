@@ -18,9 +18,19 @@ const About = () => {
                 I enjoy building, designing, and developing websites and
                 applications. I am passionate about software development,
                 process automation, and working with data to create meaningful
-                insights to help data-driven decision making. I am a fast
-                learner and hold my code to a high standard to ensure quality
-                results are delivered on time.
+                insights to help data-driven decision making.
+              </p>
+              <p className="text-xl">
+                I am a fast learner and hold my code to a high standard,
+                ensuring quality results are delivered on time. I thrive in
+                dynamic environments and continuously seek opportunities to
+                expand my skill set, whether through new technologies,
+                frameworks, or best practices in software development.
+              </p>
+              <p className="text-xl">
+                My goal is to create impactful applications that not only meet
+                user needs but also contribute to the overall success of the
+                projects I am involved in.
               </p>
             </div>
           </div>
