@@ -37,67 +37,68 @@ const Timeline = () => {
         <hr className="w-6 h-1 mx-auto my-4 bg-cyan-900 border-0 rounded-full" />
       </h1>
 
-      <div className="relative container mx-auto px-6 flex flex-col space-y-8">
-        <div className="absolute z-0 w-2 h-full bg-cyan-900 dark:bg-cyan-800 shadow-md inset-0 left-17 md:mx-auto md:left-0 md:right-0"></div>
+      <div className="relative mx-auto">
+        {/* Central line - made thinner and more subtle */}
+        <div className="absolute left-8 md:left-1/2 md:-ml-0.5 w-0.5 h-full bg-gray-200 dark:bg-gray-700" />
 
-        {timelineData.map((item, index) => (
-          <SlideUp key={index} offset="-300px 0px -300px 0px">
-            <div className="relative z-10">
-              <div
-                className={`timeline-container ${
-                  index % 2 === 0 ? "md:flex-row-reverse" : ""
-                } flex flex-col md:flex-row items-center md:justify-center w-full mx-auto`}
-              >
-                {/* Timeline Icon */}
-                <div className="absolute left-14 md:mx-auto md:left-0 md:right-0 flex items-center justify-center">
-                  <div className="w-10 h-10 rounded-full bg-cyan-900 dark:bg-cyan-800 flex items-center justify-center">
+        <div className="flex flex-col gap-12">
+          {timelineData.map((item, index) => (
+            <SlideUp key={index} offset="-300px 0px -300px 0px">
+              <div className="relative flex items-center">
+                {/* Icon */}
+                <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="w-8 h-8 rounded-full bg-cyan-900 dark:bg-cyan-800 flex items-center justify-center ring-4 ring-white dark:ring-zinc-900">
                     {item.type === "work" ? (
-                      <BiBriefcase className="text-white text-xl" />
+                      <BiBriefcase className="text-white text-sm" />
                     ) : (
-                      <BiBook className="text-white text-xl" />
+                      <BiBook className="text-white text-sm" />
                     )}
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="w-full md:w-1/2 mt-6 md:mt-0 md:px-8">
+                <div
+                  className={`ml-24 md:ml-0 md:w-1/2 ${
+                    index % 2 === 0
+                      ? "md:mr-auto md:pr-12"
+                      : "md:ml-auto md:pl-12"
+                  }`}
+                >
                   <div className="p-6 bg-white dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <div className="flex flex-col">
-                      <span className="text-sm text-cyan-800 dark:text-cyan-400">
-                        {item.date}
-                      </span>
-                      <h3 className="text-xl font-bold mt-1">{item.title}</h3>
-                      <span className="text-lg text-gray-600 dark:text-gray-400">
-                        {item.company}
-                      </span>
+                    <span className="text-sm text-cyan-800 dark:text-cyan-400">
+                      {item.date}
+                    </span>
+                    <h3 className="text-xl font-bold mt-1">{item.title}</h3>
+                    <span className="text-lg text-gray-600 dark:text-gray-400">
+                      {item.company}
+                    </span>
 
-                      <ul className="mt-3 list-disc list-inside text-gray-700 dark:text-gray-300">
-                        {item.description.map((desc, i) => (
-                          <li key={i} className="mb-1">
-                            {desc}
-                          </li>
+                    <ul className="mt-3 list-disc list-inside text-gray-700 dark:text-gray-300">
+                      {item.description.map((desc, i) => (
+                        <li key={i} className="mb-1">
+                          {desc}
+                        </li>
+                      ))}
+                    </ul>
+
+                    {item.technologies && item.technologies.length > 0 && (
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {item.technologies.map((tech, i) => (
+                          <span
+                            key={i}
+                            className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200 rounded-full text-sm"
+                          >
+                            {tech}
+                          </span>
                         ))}
-                      </ul>
-
-                      {item.technologies.length > 0 && (
-                        <div className="mt-4 flex flex-wrap gap-2">
-                          {item.technologies.map((tech, i) => (
-                            <span
-                              key={i}
-                              className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200 rounded-full text-sm"
-                            >
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
-            </div>
-          </SlideUp>
-        ))}
+            </SlideUp>
+          ))}
+        </div>
       </div>
     </section>
   );
