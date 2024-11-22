@@ -5,27 +5,41 @@ import SlideUp from "./SlideUp";
 const timelineData = [
   {
     type: "work",
-    title: "Software Engineer",
-    company: "Sample Company",
-    date: "2023 - Present",
-    description: [
-      "Led development of cloud-based solutions using Azure services",
-      "Implemented ML models for predictive analytics",
-      "Reduced processing time by 40% through optimization",
-    ],
-    technologies: ["Python", "Azure", "React", "TypeScript"],
+    title: "Technical IT Consultant",
+    company:
+      "Youth Justice Division, Ministry of Children, Community and Social Services",
+    date: "06/2024 - Present",
+  },
+  {
+    type: "work",
+    title: "Software Developer",
+    company: "Avasta Inc.",
+    date: "01/2022 - 12/2023",
+  },
+  {
+    type: "work",
+    title: "Application Developer",
+    company:
+      "Cyber Security Division, Ministry of Public & Business Service Delivery",
+    date: "05/2021 - 09/2021",
+  },
+  {
+    type: "work",
+    title: "Technology Analyst",
+    company: "Royal Canadian Mounted Police, RCMP",
+    date: "10/2020 - 05/2021",
+  },
+  {
+    type: "work",
+    title: "Data Analyst",
+    company: "Avasta Inc.",
+    date: "05/2020 - 09/2020",
   },
   {
     type: "education",
-    title: "Computer Science",
-    company: "Sample University",
-    date: "2019 - 2023",
-    description: [
-      "Bachelor of Science in Computer Science",
-      "GPA: 3.8/4.0",
-      "Relevant coursework: AI, Machine Learning, Cloud Computing",
-    ],
-    technologies: [],
+    title: "Bachelor of Science - Computer Science",
+    company: "Toronto Metropolitan University (formerly Ryerson)",
+    date: "09/2018 - 06/2023",
   },
 ];
 
@@ -38,14 +52,12 @@ const Timeline = () => {
       </h1>
 
       <div className="relative mx-auto">
-        {/* Central line - made thinner and more subtle */}
         <div className="absolute left-8 md:left-1/2 md:-ml-0.5 w-0.5 h-full bg-gray-200 dark:bg-gray-700" />
 
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-8">
           {timelineData.map((item, index) => (
             <SlideUp key={index} offset="-300px 0px -300px 0px">
               <div className="relative flex items-center">
-                {/* Icon */}
                 <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 z-10">
                   <div className="w-8 h-8 rounded-full bg-cyan-900 dark:bg-cyan-800 flex items-center justify-center ring-4 ring-white dark:ring-zinc-900">
                     {item.type === "work" ? (
@@ -56,7 +68,6 @@ const Timeline = () => {
                   </div>
                 </div>
 
-                {/* Content */}
                 <div
                   className={`ml-24 md:ml-0 md:w-1/2 ${
                     index % 2 === 0
@@ -64,35 +75,14 @@ const Timeline = () => {
                       : "md:ml-auto md:pl-12"
                   }`}
                 >
-                  <div className="p-6 bg-white dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="p-4 bg-white dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                     <span className="text-sm text-cyan-800 dark:text-cyan-400">
                       {item.date}
                     </span>
-                    <h3 className="text-xl font-bold mt-1">{item.title}</h3>
-                    <span className="text-lg text-gray-600 dark:text-gray-400">
+                    <h3 className="text-lg font-bold mt-1">{item.title}</h3>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">
                       {item.company}
                     </span>
-
-                    <ul className="mt-3 list-disc list-inside text-gray-700 dark:text-gray-300">
-                      {item.description.map((desc, i) => (
-                        <li key={i} className="mb-1">
-                          {desc}
-                        </li>
-                      ))}
-                    </ul>
-
-                    {item.technologies && item.technologies.length > 0 && (
-                      <div className="mt-4 flex flex-wrap gap-2">
-                        {item.technologies.map((tech, i) => (
-                          <span
-                            key={i}
-                            className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200 rounded-full text-sm"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    )}
                   </div>
                 </div>
               </div>
