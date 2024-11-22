@@ -9,20 +9,22 @@ interface NavItem {
   label: string;
   page: string;
 }
+
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Home",
     page: "home",
   },
   {
-    label: "About",
-    page: "about",
+    label: "Experience",
+    page: "experience",
   },
   {
     label: "Projects",
     page: "projects",
   },
 ];
+
 const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
@@ -31,7 +33,7 @@ const Navbar = () => {
   return (
     <>
       <header className="w-full mx-auto px-4 bg-slate-50 shadow fixed top-0 z-50 sm:px-20 dark:bg-zinc-900 dark:border-zinc-600 text-cyan-950 dark:text-white">
-        <div className="justify-between md:items-center md:flex ">
+        <div className="justify-between md:items-center md:flex">
           <div>
             <div className="flex items-center justify-between py-3">
               <Link
@@ -41,10 +43,11 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                // @ts-ignore
               >
                 <div className="md:py-5 md:block">
-                  <h2 className="text-4xl font-bold hover:scale-110 duration-150">Jawwad Khan</h2>
+                  <h2 className="text-4xl font-bold hover:scale-110 duration-150">
+                    Jawwad Khan
+                  </h2>
                 </div>
               </Link>
               <div className="md:hidden">
@@ -75,7 +78,6 @@ const Navbar = () => {
                       offset={-100}
                       duration={500}
                       onClick={() => setNavbar(!navbar)}
-                      // @ts-ignore
                     >
                       {item.label}
                     </Link>

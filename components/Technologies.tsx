@@ -23,6 +23,7 @@ const technologies = [
 const Technologies: React.FC = () => {
   return (
     <SlideUp offset="-300px 0px -300px 0px">
+      <h1 className="text-center font-bold text-4xl mb-8">Projects </h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         {technologies.map((tech, index) => (
           <div
