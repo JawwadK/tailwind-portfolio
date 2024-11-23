@@ -8,58 +8,74 @@ import SlideUp from "./SlideUp";
 const projects = [
   {
     name: "FitIn",
-    description: "A fitness-focused social media platform enabling users to share workout progress, track routines, and post progress pictures.",
+    description:
+      "A fitness-focused social media platform enabling users to share workout progress, track routines, and post progress pictures.",
     image: "/FitInLogin.png",
     github: "https://github.com/JawwadK/cps714-fitin",
     link: "https://fitin.web.app/",
     technologies: ["React", "Firebase", "Node.js", "Express"],
-    featured: true
+    featured: true,
   },
   {
     name: "Covid-19 Death Analysis",
-    description: "Analysis of Covid-19 mortality rates comparing vaccination status across age groups, with interactive visualizations.",
+    description:
+      "Analysis of Covid-19 mortality rates comparing vaccination status across age groups, with interactive visualizations.",
     image: "/Covid-19-Death-Analysis.png",
     github: "https://github.com/JawwadK/pokedexProto",
     link: "https://jawwadk.github.io/pokedexProto/",
     technologies: ["Python", "Pandas", "Matplotlib", "Data Analysis"],
-    featured: true
+    featured: true,
   },
   {
     name: "Movie Finder",
-    description: "Movie recommendation system using content-based & collaborative filtering for personalized suggestions.",
+    description:
+      "Movie recommendation system using content-based & collaborative filtering for personalized suggestions.",
     image: "/Movie-Finder.png",
     github: "https://github.com/JawwadK/movie-finder",
     link: "https://cps842-movie-ratings.web.app/",
     technologies: ["React", "Firebase", "Machine Learning"],
-    featured: true
+    featured: true,
   },
   {
     name: "Inventory Tracker",
-    description: "Inventory management system with real-time tracking and admin controls for product management.",
+    description:
+      "Inventory management system with real-time tracking and admin controls for product management.",
     image: "/Inventory-Tracker.png",
     github: "https://github.com/JawwadK/inventory-tracker",
     link: "https://inventory-track.web.app/login",
     technologies: ["React", "Firebase", "TypeScript"],
-    featured: false
+    featured: false,
   },
   {
     name: "PhotoDisplayer",
-    description: "Large-scale image hosting platform with advanced filtering capabilities.",
+    description:
+      "Large-scale image hosting platform with advanced filtering capabilities.",
     image: "/PhotoRenderer.png",
     github: "https://github.com/JawwadK/photo-repo",
     link: "https://coolphotodisplayer.netlify.app/",
     technologies: ["React", "JavaScript", "CSS"],
-    featured: false
+    featured: false,
   },
   {
     name: "PokedexProto",
-    description: "Interactive Pokedex application displaying detailed Pokemon information and stats.",
+    description:
+      "Interactive Pokedex application displaying detailed Pokemon information and stats.",
     image: "/PokedexProto.png",
     github: "https://github.com/JawwadK/pokedexProto",
     link: "https://jawwadk.github.io/pokedexProto/",
     technologies: ["JavaScript", "HTML", "CSS"],
-    featured: false
-  }
+    featured: false,
+  },
+  {
+    name: "Project Title",
+    description:
+      "Interactive Pokedex application displaying detailed Pokemon information and stats.",
+    image: "/PokedexProto.png",
+    github: "https://github.com/JawwadK/pokedexProto",
+    link: "https://jawwadk.github.io/pokedexProto/",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    featured: false,
+  },
 ];
 
 const Projects = () => {
