@@ -7,6 +7,25 @@ import SlideUp from "./SlideUp";
 
 const projects = [
   {
+    name: "Braum.GG",
+    description: "League of Legends Analytics Tool",
+    image: "/Braum.GG.png",
+    github: "https://github.com/JawwadK/braum.gg",
+    link: "https://braum-gg.vercel.app/",
+    technologies: ["NextJS", "TypeScript", "React", "League of Legends API"],
+    featured: true,
+  },
+  {
+    name: "Jawwad-bot",
+    description:
+      "Multi-functioning Discord Bot made with Discord.py ",
+    image: "/Jawwad-bot.png",
+    github: "https://github.com/JawwadK/jawwad-bot",
+    link: "https://discord.com/oauth2/authorize?client_id=1298008645354782773",
+    technologies: ["Python", "Discord.py", "Google Cloud Platform"],
+    featured: true,
+  },
+  {
     name: "FitIn",
     description:
       "A fitness-focused social media platform enabling users to share workout progress, track routines, and post progress pictures.",
@@ -58,16 +77,6 @@ const projects = [
   },
   {
     name: "PokedexProto",
-    description:
-      "Interactive Pokedex application displaying detailed Pokemon information and stats.",
-    image: "/PokedexProto.png",
-    github: "https://github.com/JawwadK/pokedexProto",
-    link: "https://jawwadk.github.io/pokedexProto/",
-    technologies: ["JavaScript", "HTML", "CSS"],
-    featured: false,
-  },
-  {
-    name: "Project Title",
     description:
       "Interactive Pokedex application displaying detailed Pokemon information and stats.",
     image: "/PokedexProto.png",

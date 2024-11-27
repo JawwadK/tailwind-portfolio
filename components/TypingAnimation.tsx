@@ -7,10 +7,9 @@ const TypingAnimation: React.FC = () => {
       <Typewriter
         options={{
           strings: [
-            "Hey I'm Jawwad!",
-            "Thanks for coming to my site!",
-            "Scroll below to see some of my work",
-            "If you find anything interesting lets connect!",
+            "Hey I'm Jawwad",
+            "Thanks for visiting my site",
+            "Reach out lets connect",
           ],
           autoStart: true,
           loop: true,
