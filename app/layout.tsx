@@ -1,6 +1,8 @@
 "use client"
+import { useState } from "react";
 import "../styles/globals.css"
 import Navbar from '@/components/Navbar'
+import LoadingScreen from "@/components/LoadingScreen";
 import { ThemeProvider } from "next-themes"
 import Footer from "@/components/Footer"
 
@@ -9,6 +11,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [loading, setLoading] = useState(true);
   return (
     <html lang="en">
       {/*
@@ -18,9 +21,14 @@ export default function RootLayout({
       <head />
       <body className="dark:bg-zinc-900 ">
         <ThemeProvider enableSystem={true} attribute="class">
+                    {loading ? (
+            <LoadingScreen finishLoading={() => setLoading(false)} />
+          ) : (
+            <>
           <Navbar />
           {children}
           <Footer />
+          </>)}
         </ThemeProvider>
       </body>
     </html>
