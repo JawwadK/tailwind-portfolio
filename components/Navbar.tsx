@@ -4,6 +4,7 @@ import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import MonogramLogo from "./NavbarLogo";
 
 interface NavItem {
   label: string;
@@ -45,9 +46,7 @@ const Navbar = () => {
                 duration={500}
               >
                 <div className="md:py-5 md:block">
-                  <h2 className="text-4xl font-bold hover:scale-110 duration-150">
-                    Jawwad Khan
-                  </h2>
+                <MonogramLogo />
                 </div>
               </Link>
               <div className="md:hidden">
