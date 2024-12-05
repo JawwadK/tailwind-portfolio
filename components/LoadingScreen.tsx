@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const LoadingScreen = ({ finishLoading }) => {
+const LoadingScreen = ({ finishLoading }: { finishLoading: () => void }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
