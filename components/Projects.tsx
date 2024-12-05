@@ -17,13 +17,21 @@ const projects = [
   },
   {
     name: "Jawwad-bot",
-    description:
-      "Multi-functioning Discord Bot made with Discord.py ",
+    description: "Multi-functioning Discord Bot made with Discord.py ",
     image: "/Jawwad-bot.png",
     github: "https://github.com/JawwadK/jawwad-bot",
     link: "https://discord.com/oauth2/authorize?client_id=1298008645354782773",
     technologies: ["Python", "Discord.py", "Google Cloud Platform"],
     featured: true,
+  },
+  {
+    name: "Twxt",
+    description: "Quick Practice App made for DigitalOcean Hackathon practice",
+    image: "/twxt.png",
+    github: "https://github.com/JawwadK/twxt",
+    link: "https://twxt.vercel.app/",
+    technologies: ["NextJS", "TypeScript", "React"],
+    featured: false,
   },
   {
     name: "FitIn",
