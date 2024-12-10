@@ -1,16 +1,19 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const SpaceShooter = () => {
-  const canvasRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
     const ctx = canvas.getContext("2d");
-    let animationFrameId;
-    let enemySpawnTimer;
+    if (!ctx) return;
+
+    let animationFrameId: number;
+    let enemySpawnTimer: NodeJS.Timer;
 
     // Game state
     let player = {
@@ -19,16 +22,38 @@ const SpaceShooter = () => {
       width: 30,
       height: 20,
       speed: 5,
-      bullets: [],
+      bullets: [] as Array<{
+        x: number;
+        y: number;
+        width: number;
+        height: number;
+        speed: number;
+      }>,
       health: 100,
     };
 
-    let enemies = [];
-    let particles = [];
-    const keys = {};
+    let enemies: Array<{
+      x: number;
+      y: number;
+      width: number;
+      height: number;
+      speed: number;
+    }> = [];
+
+    let particles: Array<{
+      x: number;
+      y: number;
+      size: number;
+      speedX: number;
+      speedY: number;
+      color: string;
+      life: number;
+    }> = [];
+
+    const keys: { [key: string]: boolean } = {};
 
     // Event listeners
-    const handleKeyDown = (e) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       keys[e.key] = true;
       if (e.key === " " && gameStarted && !gameOver) {
         player.bullets.push({
@@ -41,7 +66,7 @@ const SpaceShooter = () => {
       }
     };
 
-    const handleKeyUp = (e) => {
+    const handleKeyUp = (e: KeyboardEvent) => {
       keys[e.key] = false;
     };
 
@@ -55,7 +80,7 @@ const SpaceShooter = () => {
         player.y += player.speed;
     };
 
-    const createParticles = (x, y, color) => {
+    const createParticles = (x: number, y: number, color: string) => {
       for (let i = 0; i < 5; i++) {
         particles.push({
           x,
@@ -220,6 +245,10 @@ const SpaceShooter = () => {
       enemySpawnTimer = setInterval(spawnEnemy, 2000);
       update();
     };
+
+    if (gameStarted && !gameOver) {
+      startGame();
+    }
 
     // Cleanup
     return () => {
